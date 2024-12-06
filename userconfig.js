@@ -122,6 +122,11 @@ const CONFIG = new Config({
               icon_color: '#996767'
             },
             {
+              url: 'https://open.spotify.com/',
+              icon: 'brand-spotify',
+              icon_color: '#996767'
+            },
+            {
               url: 'https://r-a-d.io/',
               icon: 'radio'
             },
