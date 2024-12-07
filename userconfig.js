@@ -1,12 +1,12 @@
 const CONFIG = new Config({
   crypto: {
-    coin: 'ETH',
-    currency: 'USD',
+    coin: 'BTC',
+    currency: 'EUR',
     refreshIn: 10
   },
   overrideStorage: true, // override localStorage with fixed userconfig values
   temperature: {
-    location: 'Matão, São Paulo',
+    location: 'Ho Chi Minh City, Vietnam',
     scale: 'C'
   },
   clock: {
@@ -30,74 +30,69 @@ const CONFIG = new Config({
   openLastVisitedTab: false,
   tabs: [
     {
-      name: 'boards',
+      name: 'sites',
       background_url: 'src/img/banners/bg-1.gif',
       categories: [{
         name: 'fun',
         links: [
           {
-            url: 'https://4chan.org/wsg/',
-            name: '/wsg/'
+            url: 'https://www.youtube.com/',
+            name: 'youtube',
+            icon: 'brand-youtube',
+            icon_color: '#8B6464'
           },
           {
-            name: '/out/',
-            url: 'https://4chan.org/out',
-            icon: 'leaf',
-            icon_color: '#64876d'
+            name: 'steam',
+            url: 'https://steamcommunity.com/',
+            icon: 'brand-steam',
+            icon_color: '#647B8B'
           },
           {
-            name: '/lit/',
-            url: 'https://4chan.org/lit/',
-            icon: 'book'
+            name: 'reddit',
+            url: 'https://www.reddit.com/',
+            icon_color: '#8B7564',
+            icon: 'brand-reddit',
           },
           {
-            name: '/v/',
-            url: 'https://4chan.org/v/',
-            icon: 'device-gamepad',
-            icon_color: '#8b647b'
+            name: 'twitter',
+            url: 'https://x.com/',
+            icon: 'brand-twitter',
+            icon_color: '#648B7D'
           },
           {
-            name: '/p/',
-            url: 'https://4chan.org/p/',
-            icon: 'camera'
+            name: 'facebook',
+            url: 'https://www.facebook.com/',
+            icon: 'brand-facebook',
+            icon_color: '#648B7D'
           }
         ]
       },
       {
-        name: 'Comfy',
+        name: 'Productivity',
         links: [
           {
-            name: '/lounge/',
-            url: 'https://sushigirl.us/lounge/catalog.html'
+            name: 'ChatGPT',
+            url: 'https://chat.openai.com/',
+            icon: 'robot'
           },
           {
-            name: '/comfy/',
-            url: 'https://anon.cafe/comfy/catalog.html'
-          }
-        ]
-      },
-      {
-        name: 'Technology',
-        links: [
-          {
-            name: '/g/',
-            url: 'https://4chan.org/g/',
+            name: 'school',
+            url: 'https://online.hcmute.edu.vn/',
+            icon: 'school'
           },
           {
-            name: '/Δ/',
-            url: 'https://archive.arisuchan.jp/%CE%94/catalog.html'
+            name: 'mail',
+            url: 'https://mail.google.com/mail/u/1/#inbox',
+            icon: 'mail'
           },
           {
-            name: '/λ/',
-            url: 'https://www.lainchan.org/%CE%BB/catalog.html'
+            name: 'calendar',
+            url: 'https://calendar.google.com/calendar/u/4/r',
+            icon: 'calendar'
           },
           {
-            name: '/sec/',
-            url: 'https://www.lainchan.org/sec/catalog.html'
-          },
-          {
-            name: '/prog/',
-            url: 'https://boards.420chan.org/prog/',
+            name: 'github',
+            url: 'https://github.com/',
             icon: 'code'
           }
         ]
@@ -105,7 +100,7 @@ const CONFIG = new Config({
       ]
     },
     {
-      name: 'music',
+      name: 'fun',
       background_url: 'src/img/banners/bg-2.gif',
       categories: [
         {
@@ -124,12 +119,29 @@ const CONFIG = new Config({
             {
               url: 'https://open.spotify.com/',
               icon: 'brand-spotify',
-              icon_color: '#996767'
+              icon_color: '#b2fba5'
             },
             {
               url: 'https://r-a-d.io/',
               icon: 'radio'
             },
+          ]
+        },
+        {
+          name: 'Twitch',
+          links: [
+            {
+              name: 'renyan',
+              url: 'https://www.twitch.tv/renyan',
+              icon: 'chess-king',
+              icon_color: '#8b647b'
+            },
+            {
+              name: 'humzh',
+              url: 'https://www.twitch.tv/humzh',
+              icon: 'device-gamepad',
+              icon_color: '#64876d'
+            }
           ]
         },
         {
